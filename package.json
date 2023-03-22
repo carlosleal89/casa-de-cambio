@@ -4,9 +4,14 @@
   "description": "Casa de Câmbio",
   "main": "index.html",
   "scripts": {
-    "test": "echo Olá",
+    "test": "jest",
     "dev": "vite --open",
     "lint": "eslint ./src"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   },
   "repository": {
     "type": "git",
@@ -20,8 +25,13 @@
   "homepage": "https://github.com/arturpeixoto/exercise-casa-de-cambio#readme",
   "dependencies": {
     "@trybe/eslint-config-frontend": "^1.8.3",
+    "jest": "^29.5.0",
     "sweetalert2": "^11.7.3",
     "vite": "^4.2.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "babel-jest": "^29.5.0"
+  }
 }
