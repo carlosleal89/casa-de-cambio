@@ -19,7 +19,8 @@ function displayCoinsCurrency(coinArray) {
 }
 
 function mainCoinsHandler(coinArray) {
-  const mainCoins = ['BRL', 'USD', 'EUR', 'GBP', 'JPY', 'AUD', 'CHF', 'CAD', 'CNY', 'ARS', 'UYU'];
+  const mainCoins = [
+    'BRL', 'USD', 'EUR', 'GBP', 'JPY', 'AUD', 'CHF', 'CAD', 'CNY', 'ARS', 'UYU'];
   const selectedCoins = coinArray.filter((coin) => mainCoins.includes(coin[0]));
   console.log(coinArray);
   console.log(selectedCoins);
