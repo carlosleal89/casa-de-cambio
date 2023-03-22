@@ -18,6 +18,14 @@ function displayCoinsCurrency(coinArray) {
   });
 }
 
+function mainCoinsHandler(coinArray) {
+  const mainCoins = ['BRL', 'USD', 'EUR', 'GBP', 'JPY', 'AUD', 'CHF', 'CAD', 'CNY', 'ARS', 'UYU'];
+  const selectedCoins = coinArray.filter((coin) => mainCoins.includes(coin[0]));
+  console.log(coinArray);
+  console.log(selectedCoins);
+  displayCoinsCurrency(selectedCoins);
+}
+
 function handlerError(value, data) {
   if (value === '') {
     throw new Error('Digite uma moeda');
@@ -36,7 +44,7 @@ function handlerExchangeCurrency() {
       const coinCurrency = Object.entries(data.rates);
       referenceTextEl.innerHTML = `Valores referentes a 1 
       ${data.base} no dia ${data.date}`;
-      displayCoinsCurrency(coinCurrency);
+      mainCoinsHandler(coinCurrency);
     }).catch((error) => {
       Swal.fire({
         icon: 'error',
