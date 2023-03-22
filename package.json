@@ -1,0 +1,27 @@
+{
+  "name": "exercise-casa-de-cambio",
+  "version": "1.0.0",
+  "description": "Casa de Câmbio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo Olá",
+    "dev": "vite --open",
+    "lint": "eslint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arturpeixoto/exercise-casa-de-cambio.git"
+  },
+  "author": "Artur Peixoto, Carlos Leal, Jeoflan Junior e Lionel Miranda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arturpeixoto/exercise-casa-de-cambio/issues"
+  },
+  "homepage": "https://github.com/arturpeixoto/exercise-casa-de-cambio#readme",
+  "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.8.3",
+    "sweetalert2": "^11.7.3",
+    "vite": "^4.2.1"
+  },
+  "type": "module"
+}
