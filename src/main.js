@@ -1,5 +1,6 @@
 import './style.css';
 import Swal from 'sweetalert2';
+import mainCoins from './data/coins';
 
 const baseUrl = 'https://api.exchangerate.host/latest?base=';
 const inputCoinEl = document.querySelector('#input-coin');
@@ -19,11 +20,7 @@ function displayCoinsCurrency(coinArray) {
 }
 
 function mainCoinsHandler(coinArray) {
-  const mainCoins = [
-    'BRL', 'USD', 'EUR', 'GBP', 'JPY', 'AUD', 'CHF', 'CAD', 'CNY', 'ARS', 'UYU'];
   const selectedCoins = coinArray.filter((coin) => mainCoins.includes(coin[0]));
-  console.log(coinArray);
-  console.log(selectedCoins);
   displayCoinsCurrency(selectedCoins);
 }
 
